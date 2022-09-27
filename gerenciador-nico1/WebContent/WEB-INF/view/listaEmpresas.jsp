@@ -11,10 +11,18 @@
 <title>Java Standard Taglib</title>
 </head>
 <body>
-
+	<c:import url="logout-parcial.jsp" />
+	
+	
 	<c:if test="${not empty empresa}">
 		Empresa ${ empresa } cadastrada com sucesso!
 	</c:if>
+	
+	
+	Sessão iniciada com o usuário : ${usuarioLogado.login }
+	
+	<br>
+	<br>
 	
 	Lista de empresas: <br />
 	
@@ -28,7 +36,8 @@
 			</li>
 		</c:forEach>
 	</ul>
-	
+	<br>
+	<a href="entrada?acao=NovaEmpresaForm">Cadastrar Empresa</a>
 </body>
 </html>
 
