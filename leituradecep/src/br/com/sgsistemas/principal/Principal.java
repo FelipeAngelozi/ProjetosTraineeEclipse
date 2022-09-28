@@ -23,6 +23,7 @@ public class Principal {
 		
 		System.out.println(resposta);
 		
+		sc.close();
 		
 //		Request.Post("http://targethost/login")
 //				.bodyForm(Form.form().add("username", "vip").add("password", "secret").build()).execute()
